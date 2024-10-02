@@ -7,6 +7,9 @@
 
 #include <EASTL/allocator.h>
 #include <EASTL/internal/config.h>
+#if __has_include(<malloc.h>)
+	#include <malloc.h>
+#endif
 
 #include <new>
 
